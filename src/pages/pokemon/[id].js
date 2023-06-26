@@ -31,7 +31,7 @@ export default function PokemonDetails({ pokemon }) {
   return (
     <div className={styles.container}>
       <div>
-        <h1>{pokemon.name}</h1>
+        <h1 className={styles.title}>{pokemon.name}</h1>
       </div>
       <Image
         src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${String(
@@ -41,11 +41,11 @@ export default function PokemonDetails({ pokemon }) {
         height="200"
         alt={pokemon.name}
       />
-      <div>
+      <div className={styles.number}>
         <h3>Número:</h3>
         <p>#{pokemon.id}</p>
       </div>
-      <div>
+      <div className={styles.types}>
         <h3>Tipo:</h3>
         <div>
           {pokemon.types.map((item, index) => (
@@ -58,11 +58,11 @@ export default function PokemonDetails({ pokemon }) {
           ))}
         </div>
       </div>
-      <div>
+      <div className={styles.height}>
         <h4>Altura:</h4>
         <p>{pokemon.height * 10} cm</p>
       </div>
-      <div>
+      <div className={styles.weight}>
         <h4>Peso:</h4>
         <p>{pokemon.weight / 10} kg</p>
       </div>

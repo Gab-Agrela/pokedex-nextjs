@@ -3,12 +3,50 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 150px;
 }
 
+.title {
+  text-transform: capitalize;
+}
 
+.number {
+  text-align: center;
+  padding: 5px;
+}
 
+.number h3 {
+  margin-bottom: 10px;
+}
 
+.number p {
+  font-size: large;
+}
 
+.types {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.types h3 {
+  margin-bottom: 10px;
+}
+
+.height {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.weight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
 
 
 
